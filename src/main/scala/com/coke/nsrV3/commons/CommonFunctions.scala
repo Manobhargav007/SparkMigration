@@ -23,6 +23,7 @@ object CommonFunctions extends App {
     .appName("Database connection").getOrCreate()
   logger.info("Spark intialized")
   logger.info("Git trail")
+  logger.info("Again updating")
   val inputdata1 = spark.read.csv("file:///C:/revenue_shipfrom.csv")
   logger.info("Data loaded")
   inputdata1.show()
