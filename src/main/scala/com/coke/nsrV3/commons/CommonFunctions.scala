@@ -22,6 +22,7 @@ object CommonFunctions extends App {
   val spark = SparkSession.builder().master("local[*]")
     .appName("Database connection").getOrCreate()
   logger.info("Spark intialized")
+  logger.info("Git trail")
   val inputdata1 = spark.read.csv("file:///C:/revenue_shipfrom.csv")
   logger.info("Data loaded")
   inputdata1.show()
